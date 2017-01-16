@@ -31,9 +31,9 @@ RUN apt-get -y --no-install-recommends install \
 # ---------------
 # Cairo and other helpful libraries
 RUN apt-get -y --no-install-recommends install \
-    libxt \
+    libxt-dev \
     && install2.r --error \
-        pander Cairo
+        Cairo pander
 
 # Place to put fonts
 RUN mkdir -p $HOME/fonts
