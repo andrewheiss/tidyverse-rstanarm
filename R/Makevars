@@ -1,0 +1,2 @@
+CXX = /usr/bin/ccache clang++ -Qunused-arguments -fcolor-diagnostics 
+CXXFLAGS = -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -pedantic -g0
